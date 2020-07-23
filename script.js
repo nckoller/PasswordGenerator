@@ -110,6 +110,7 @@ function generatePassword() {
   // if they don't input a number or put an invalid number
   if (!passwordLength || passwordLength < 8 || passwordLength > 128) {
     alert("You must enter a number between 8 and 128");
+    return null;
   } else {
     // prompts for each type of password options
     confirmNumber = confirm(
